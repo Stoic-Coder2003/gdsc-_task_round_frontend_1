@@ -7,11 +7,11 @@
     box-sizing: border-box;
     font-family: Poppins, system-ui;
     overflow: hidden;
+    cursor: url('Images/arrows/arror.png'), auto;
 }
 
 body{
     height: 100vh;
-    cursor: url('Images/arrows/arror.png'), auto;
 }
 
 nav {
@@ -50,6 +50,12 @@ nav a {
     margin: 0 15px;
 }
 
+nav a:hover {
+    color: #21524F;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
 .nav-button {
     display: flex;
     align-items: center;
@@ -61,6 +67,13 @@ nav a {
     border-radius: 50px;
     height: 50px;
     width: 180px;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.nav-button:hover {
+    color: #21524F;
+    background-color: white;
+    border: 2px solid #4f776e;
 }
 
 #main-body{
@@ -152,6 +165,13 @@ nav a {
     border-radius: 50px;
     height: 45px;
     width: 220px;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+#create-cv:hover{
+    color: #21524F;
+    background-color: white;
+    border: 2px solid #4f776e;
 }
 
 .rating-container{
@@ -180,3 +200,4 @@ nav a {
     height: 80px;
     margin-top: 60px;
 }
+
