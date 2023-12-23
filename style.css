@@ -1,8 +1,15 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins, system-ui
+    font-family: Poppins, system-ui;
+    overflow: hidden;
+}
+
+body{
+    cursor: url('Images/arrows/arror.png'), auto;
 }
 
 nav {
@@ -12,26 +19,26 @@ nav {
     align-items: center;
 }
 
-#logo-holder{
+#logo-holder {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#logo-img{
+#logo-img {
     margin-top: 4px;
     width: 20px;
     height: 20px;
 }
 
-#logo-text{
+#logo-text {
     font-size: 18px;
     font-weight: bold;
     font-family: Noto-Japanese, system-ui;
     color: #21524F;
 }
 
-.nav-text{
+.nav-text {
     font-size: 15px;
 }
 
@@ -41,7 +48,7 @@ nav a {
     margin: 0 15px;
 }
 
-.nav-button{
+.nav-button {
     text-align: center;
     padding-top: 12px;
     color: white;
@@ -49,5 +56,68 @@ nav a {
     background-color: #21524F;
     border-radius: 50px;
     height: 50px;
-    width: 180px
+    width: 180px;
 }
+
+#main-body{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-shape {
+    transform: scale(0.75);
+}
+
+.right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 15px;
+    color: #fff;
+
+    flex: 0.08;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: 600ms ease-in-out;
+    width: 100px;
+}
+
+.panel:hover {
+    transform: scale(1.009);
+    box-shadow:  8px 8px 15px #d9d9d9,
+    -8px -8px 15px #ffffff;
+}
+
+.panel.active {
+    flex: 0.3;
+}
+
+.panels-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    width: 90vw;
+}
+

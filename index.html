@@ -1,15 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>GDSC Site</title>
 </head>
 <body>
-<section class="main-container">
     <nav>
         <div id="logo-holder">
             <img id="logo-img" src="Images/arrows/arrow3.png" alt="arrow">
@@ -23,9 +20,8 @@
         </div>
         <div class="nav-button">Create CV now</div>
     </nav>
-<!--done above-->
 
-    <div class="main-body">
+    <div id="main-body">
         <div class="left-container">
             <p id="main-body-text">Unlock <span id="your-text-part">Your</span> career potential</p>
             <div id="create-cv">Create CV now</div>
@@ -40,8 +36,18 @@
                 <div id="text-small">TrustScore 4.8 | 347 reviews</div>
             </div>
         </div>
-        <div class="right-container"></div>
+
+        <div class="right-container">
+            <div class="container">
+                <div class="panels-container">
+                    <div class="panel active" style="background-image: url('Images/people/man1.webp')"></div>
+                    <div class="panel" style="background-image: url('Images/people/woman1.jpeg')"></div>
+                    <div class="panel" style="background-image: url('Images/people/man2.jpeg')"></div>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
+
+<script src="script.js"></script>
 </body>
 </html>
