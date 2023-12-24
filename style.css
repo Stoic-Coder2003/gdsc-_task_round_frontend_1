@@ -120,6 +120,7 @@ nav a {
 nav a:hover {
     color: #21524F;
     border-bottom: 2px solid #21524F;
+    cursor: none;
 }
 
 .nav-button {
