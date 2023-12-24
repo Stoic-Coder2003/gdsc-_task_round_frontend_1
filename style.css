@@ -5,17 +5,78 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins, system-ui;
-    overflow: hidden;
-    cursor: url('Images/arrows/arror.png'), auto;
+    overflow: clip;
 }
 
 body {
     height: 100vh;
     background-color: #f5f5f5;
+    cursor: none;
+}
+
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #4f776e;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
+
+.cursor::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 8px solid #21524F;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s ease-in-out;
+    border: 1px solid #21524F;
 }
 
 nav {
-    margin: 20px 70px;
+    margin: 40px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,6 +190,7 @@ nav a:hover {
 .panel:hover {
     transform: scale(1.009);
     box-shadow: 8px 8px 15px #d9d9d9, -8px -8px 15px #ffffff;
+    cursor: url('Images/arrows/arror.png'), auto;
 }
 
 .panel.active {
