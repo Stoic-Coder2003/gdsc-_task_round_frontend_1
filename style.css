@@ -76,7 +76,8 @@ body {
 }
 
 nav {
-    margin: 20px 40px 50px;
+    height: 8%;
+    margin: 20px 40px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,8 +143,7 @@ nav a:hover {
 }
 
 #main-body {
-    margin-top:100px;
-    margin-bottom: 50px;
+    height: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -258,12 +258,6 @@ nav a:hover {
     align-items: center;
     font-size: 10px;
     color: #21524F;
-}
-
-.footer-container{
-    display: flex;
-    margin-top: 40px;
-    padding-top: 20px;
 }
 
 #footer {
