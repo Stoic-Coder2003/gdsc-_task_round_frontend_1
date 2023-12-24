@@ -142,7 +142,7 @@ nav a:hover {
 }
 
 #main-body {
-    margin-top: 100px;
+    margin:100px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -262,5 +262,4 @@ nav a:hover {
 #footer {
     background-color: #21524F;
     height: 80px;
-    margin-top: 60px;
 }
