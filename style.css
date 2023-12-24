@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
-    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,8 +9,9 @@
     cursor: url('Images/arrows/arror.png'), auto;
 }
 
-body{
+body {
     height: 100vh;
+    background-color: #f5f5f5;
 }
 
 nav {
@@ -42,18 +42,22 @@ nav {
 
 .nav-text {
     font-size: 15px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
     color: #4f776e;
     text-decoration: none;
     margin: 0 15px;
+    padding: 0 5px;
 }
 
 nav a:hover {
     color: #21524F;
-    font-weight: 300;
-    text-decoration: underline;
+    border-bottom: 2px solid #21524F;
 }
 
 .nav-button {
@@ -76,7 +80,7 @@ nav a:hover {
     border: 2px solid #4f776e;
 }
 
-#main-body{
+#main-body {
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
@@ -115,7 +119,6 @@ nav a:hover {
     height: 400px;
     border-radius: 15px;
     color: #fff;
-
     flex: 0.12;
     margin: 10px;
     position: relative;
@@ -125,8 +128,7 @@ nav a:hover {
 
 .panel:hover {
     transform: scale(1.009);
-    box-shadow:  8px 8px 15px #d9d9d9,
-    -8px -8px 15px #ffffff;
+    box-shadow: 8px 8px 15px #d9d9d9, -8px -8px 15px #ffffff;
 }
 
 .panel.active {
@@ -140,19 +142,19 @@ nav a:hover {
     width: 90vw;
 }
 
-#main-body-text{
+#main-body-text {
     font-size: 46px;
     font-weight: bold;
     color: #21524F;
 }
 
-#your-text-part{
+#your-text-part {
     color: #88BDAC;
     font-style: italic;
     font-weight: 500;
 }
 
-#create-cv{
+#create-cv {
     margin-top: 25px;
     margin-bottom: 15px;
     display: flex;
@@ -168,13 +170,13 @@ nav a:hover {
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
-#create-cv:hover{
+#create-cv:hover {
     color: #21524F;
     background-color: white;
     border: 2px solid #4f776e;
 }
 
-.rating-container{
+.rating-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -182,12 +184,12 @@ nav a:hover {
     gap: 15px;
 }
 
-.star{
+.star {
     height: 20px;
     width: 20px;
 }
 
-#text-small{
+#text-small {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,9 +197,8 @@ nav a:hover {
     color: #21524F;
 }
 
-#footer{
+#footer {
     background-color: #21524F;
     height: 80px;
     margin-top: 60px;
 }
-
